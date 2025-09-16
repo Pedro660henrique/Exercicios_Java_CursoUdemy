@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Rose Santos\Desktop\ProjetoPortofolio\ExerciciosUdemy\Ex_ifElse\.metadata\.plugins\org.eclipse.jdt.core
-2394622190.index
-1865797976.index
-2479596117.index
