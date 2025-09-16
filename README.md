@@ -1,4 +1,4 @@
-# Exercícios do Curso Java Completo
+# Exercícios do Curso Java
 
 Repositório dedicado aos exercícios do curso **Java COMPLETO: Do Zero ao Profissional**, ministrado pelo professor [Nélio Alves](https://www.udemy.com/user/nelio-alves/) na Udemy.  
 
