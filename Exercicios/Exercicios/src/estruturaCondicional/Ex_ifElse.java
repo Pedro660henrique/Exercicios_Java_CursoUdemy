@@ -73,27 +73,23 @@ public class Ex_ifElse {
 	public static void Ex4() {
 		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 		
-		System.out.print("Digite o horario inicial (HH:mm): ");
-		LocalTime horaInicial = LocalTime.parse(sc.nextLine());
+		System.out.print("Digite o horario inicial: ");
+		int horaInicial = sc.nextInt();
 		
-		System.out.print("Digite o horario Final (HH:mm): ");
-		LocalTime horaFinal = LocalTime.parse(sc.nextLine());
+		System.out.print("Digite o horario Final: ");
+		int horaFinal = sc.nextInt();
 		
+		int duracao;
 		
 		// Se o horário final for antes do inicial, soma 24h
-		if (horaFinal.isBefore(horaInicial)) {
-		    horaFinal = horaFinal.plusHours(24); 
-		}	
-		
-		//calcula a duração
-		Duration duracao = Duration.between(horaInicial, horaFinal);
-		
+		if (horaInicial < horaFinal) {
+		    duracao = horaFinal - horaInicial; 
+		} else {
+			duracao = 24 - horaInicial + horaFinal;
+		}
 		
 		
-		long horas = duracao.toHours();
-		long minutos = duracao.toMinutesPart();
-		
-		System.out.printf("Diferença:  %d:%02d%n", horas, minutos);
+		System.out.printf("O JOGO DUROU " + duracao + " HORA(S)");
 		
 		sc.close();
 	}
